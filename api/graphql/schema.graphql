@@ -1,0 +1,25 @@
+type Company {
+  id: ID!
+  name: String!
+  sites: [Site]
+}
+
+type Site {
+  id: ID!
+  name: String!
+  company: Company!
+}
+
+type Query {
+  companies: [Company]
+  sites(companyId: ID!): [Site]
+}
+
+type Mutation {
+  createCompany(name: String!): Company
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

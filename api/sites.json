@@ -1,0 +1,27 @@
+[
+  {
+    "id": "0",
+    "name": "Site 1",
+    "modelType": "Site"
+  },
+  {
+    "id": "1",
+    "name": "Site 2",
+    "modelType": "Site"
+  },
+  {
+    "id": "2",
+    "name": "Site 3",
+    "modelType": "Site"
+  },
+  {
+    "id": "3",
+    "name": "Site 4",
+    "modelType": "Site"
+  },
+  {
+    "id": "4",
+    "name": "Site 5",
+    "modelType": "Site"
+  }
+]

@@ -1,0 +1,10 @@
+query GetCompanies {
+  companies {
+    id
+    name
+    sites {
+      id
+      name
+    }
+  }
+}
