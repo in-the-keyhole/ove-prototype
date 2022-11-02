@@ -10,7 +10,7 @@ on:
       - main
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: './api' # set this to the path to your web app project, defaults to the repository root
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: 'api' # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '14.x' # set this to the node version to use (supports 8.x, 10.x, 12.x)
 
 jobs:
@@ -46,9 +46,9 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for GitHub integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations ######
-          app_location: "src" # App source code path relative to repository root
+          app_location: "client" # App source code path relative to repository root
           api_location: "api" # Api source code path relative to repository root - optional
-          output_location: "public" # Built app content directory, relative to app_location - optional
+          output_location: "build" # Built app content directory, relative to app_location - optional
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
